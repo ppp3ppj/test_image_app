@@ -3,6 +3,8 @@ import 'package:test_image_app/view_model/counter_view_model.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     final counterVM = Provider.of<CounterViewModel>(context);
@@ -37,6 +39,9 @@ class HomeScreen extends StatelessWidget {
                   onPressed: counterVM.decrementCounter,
                   child: Icon(Icons.remove),
                 ),
+                ElevatedButton(onPressed: () => {
+                  Navigator.pushNamed(context, '/counter_add2')
+                }, child: const Text('Go to Add2 Counter')),
               ],
             ),
           ],
