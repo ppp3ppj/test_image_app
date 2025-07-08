@@ -11,7 +11,7 @@ class CounterScreenAdd2 extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Counter View Add2'),
+        title: const Text('Sample Counter View Add2'),
       ),
       body: Center(
         child: Column(
