@@ -1,24 +1,48 @@
 import 'package:flutter/material.dart';
+import 'package:test_image_app/view_model/counter_view_model.dart';
+import 'package:provider/provider.dart';
 
-class HomeScreen extends StatefulWidget {
-  // This class will be used to build the home screen of the app.
-  // It will contain the UI components and logic for the home screen.
-
-  @override
-  _HomeScreenState createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // Placeholder for building the home screen UI.
+    final counterVM = Provider.of<CounterViewModel>(context);
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Home Screen'),
       ),
       body: Center(
-        child: Text("Home Screen is being built."),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'Counter Value:',
+              style: TextStyle(fontSize: 20),
+            ),
+            SizedBox(height: 20),
+            Text(
+              '${counterVM.counter}',
+              style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                ElevatedButton(
+                  onPressed: counterVM.incrementCounter,
+                  child: Icon(Icons.add),
+                ),
+                SizedBox(width: 20),
+                ElevatedButton(
+                  onPressed: counterVM.decrementCounter,
+                  child: Icon(Icons.remove),
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
 }
+
