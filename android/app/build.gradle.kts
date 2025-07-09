@@ -8,7 +8,9 @@ plugins {
 android {
     namespace = "com.example.test_image_app"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    //ndkVersion = flutter.ndkVersion
+    // fix ndk version use lts version
+    ndkVersion = "27.2.12479018" 
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
