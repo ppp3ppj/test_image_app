@@ -44,6 +44,10 @@
         </intent>
     </queries>
 
+    <!-- Internet -->
     <uses-permission android:name="android.permission.INTERNET"/> 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- Image -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 </manifest>
