@@ -4,6 +4,7 @@ import 'package:test_image_app/view/screens/counter_example/counter_screen_add2.
 import 'package:test_image_app/view/screens/home_screen.dart';
 import 'package:test_image_app/view/screens/pokemon_list/pokemon_list_stateful_screen.dart';
 import 'package:test_image_app/view/screens/pokemon_list/pokemon_list_stateless_screen.dart';
+import 'package:test_image_app/view/screens/upload_image/picker_image_screen.dart';
 import 'package:test_image_app/view_model/counter_example/counter_add2_view_model.dart';
 import 'package:test_image_app/view_model/counter_view_model.dart';
 import 'package:test_image_app/view_model/pokemon_list/pokemon_list_view_model.dart';
@@ -55,6 +56,7 @@ class MyApp extends StatelessWidget {
           child: const PokemonListStatelessScreen(),
         ),
         '/pokemon_list_steteful': (context) => const PokemonListStatefulScreen(),
+        '/picker_image': (context) => const PickerImageScreen(),
       },
       //home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
