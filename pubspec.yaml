@@ -40,6 +40,7 @@ dependencies:
   record: ^6.0.0 # Audio recording package
   just_audio: ^0.10.4 # Audio playback package
   path_provider: ^2.1.5 # Provides access to commonly used locations on the filesystem
+  workmanager: ^0.8.0 # Background task management package
 
 dev_dependencies:
   flutter_test:
