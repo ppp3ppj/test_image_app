@@ -32,12 +32,10 @@ void main() {
   );
   */
 
-  // If you want to use ChangeNotifierProvider for each screen, you can do it in the routes
-  //Workmanager().initialize(doBackgroundSync, isInDebugMode: true); // ✅ Must be here
-  //setupBackgroundSync();
-
-  //setupBackgroundSync();
   setupBackgroundSync();
+
+
+  // If you want to use ChangeNotifierProvider for each screen, you can do it in the routes
   runApp(const MyApp());
 }
 
