@@ -40,7 +40,15 @@ dependencies:
   record: ^6.0.0 # Audio recording package
   just_audio: ^0.10.4 # Audio playback package
   path_provider: ^2.1.5 # Provides access to commonly used locations on the filesystem
+
   workmanager: ^0.8.0 # Background task management package
+  #worker_manager: ^7.2.6 # Background task management package for Flutter
+
+  # stows packages for secure storage and background sync
+  #stow: ^0.4.0
+  #stow_plain: ^0.4.0
+  #stow_secure: ^0.4.0
+  #stow_codecs: ^1.2.0
 
 dev_dependencies:
   flutter_test:
