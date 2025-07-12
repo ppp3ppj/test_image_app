@@ -5,10 +5,12 @@ import 'package:test_image_app/view/screens/home_screen.dart';
 import 'package:test_image_app/view/screens/pokemon_list/pokemon_list_stateful_screen.dart';
 import 'package:test_image_app/view/screens/pokemon_list/pokemon_list_stateless_screen.dart';
 import 'package:test_image_app/view/screens/picker_image/picker_image_screen.dart';
+import 'package:test_image_app/view/screens/voice_record/voice_record_screen.dart';
 import 'package:test_image_app/view_model/counter_example/counter_add2_view_model.dart';
 import 'package:test_image_app/view_model/counter_view_model.dart';
 import 'package:test_image_app/view_model/picker_image/picker_image_view_model.dart';
 import 'package:test_image_app/view_model/pokemon_list/pokemon_list_view_model.dart';
+import 'package:test_image_app/view_model/voice_record/voice_record_view_model.dart';
 
 void main() {
   // if need to use global state management, use MultiProvider
@@ -60,7 +62,11 @@ class MyApp extends StatelessWidget {
         '/picker_image': (context) => ChangeNotifierProvider(
           create: (_) => PickerImageViewModel(), // Example, replace with actual ViewModel if needed
           child: const PickerImageScreen(),
-        )
+        ),
+        '/voice_record': (context) => ChangeNotifierProvider(
+          create: (_) => VoiceRecordViewModel(), // Example, replace with actual ViewModel if needed
+          child: const VoiceRecordScreen(),
+        ),
       },
       //home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );

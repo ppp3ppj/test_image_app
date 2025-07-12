@@ -33,6 +33,10 @@ class HomeScreen extends StatelessWidget {
               onPressed: () => {Navigator.pushNamed(context, '/picker_image')},
               child: const Text('Image Picker Demo'),
             ),
+            ElevatedButton(
+              onPressed: () => {Navigator.pushNamed(context, '/voice_record')},
+              child: const Text('Voice Record Demo'),
+            ),
           ],
         ),
       ),
