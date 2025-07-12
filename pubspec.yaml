@@ -34,12 +34,12 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
-  provider: ^6.1.5
-  http: ^1.4.0
-  image_picker: ^1.1.2
-  record: ^6.0.0
-  just_audio: ^0.10.4
-  path_provider: ^2.1.5
+  provider: ^6.1.5 # State management solution
+  http: ^1.4.0 # HTTP client for making network requests
+  image_picker: ^1.1.2 # Image picker for selecting images from the gallery or camera
+  record: ^6.0.0 # Audio recording package
+  just_audio: ^0.10.4 # Audio playback package
+  path_provider: ^2.1.5 # Provides access to commonly used locations on the filesystem
 
 dev_dependencies:
   flutter_test:
