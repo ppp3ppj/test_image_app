@@ -39,6 +39,7 @@ The release APK will be available at:
 build/app/outputs/flutter-apk/app-release.apk
 
 iOS
+
 To build the iOS app:
 
     flutter build ios --release
